@@ -45,3 +45,6 @@ class TestStudent(unittest.TestCase):
             student = Student("Doe", "John", "Computer Science", 4.5)
         with self.assertRaises(ValueError):
             student = Student("Doe", "John", "Computer Science", -1.0)
+
+if __name__ == '__main__':
+    unittest.main()

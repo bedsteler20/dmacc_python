@@ -27,3 +27,12 @@ class Student:
             + "with gpa: "
             + str(self.gpa)
         )
+    
+    def __repr__(self) -> str:
+        return self.__str__()
+
+if __name__ == '__main__':
+    student = Student("Doe", "John", "Computer Science", 3.5)
+    student2 = Student("Doe", "John", "Computer Science", 3.5)
+    print(str(student))
+    print(str(student2))
